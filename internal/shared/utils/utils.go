@@ -124,6 +124,8 @@ func ParseTicketPrice(input, username string, cfg configs.AllowList) (int, error
 		return 25, nil
 	case 30:
 		return 30, nil
+	case 13:
+		return 13, nil
 	default:
 		return -1, fmt.Errorf("failed to parse ticket price. wrong value")
 	}
